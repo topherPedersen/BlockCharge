@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- BlockCharge Version 0.1.0.0003 -->
+<head>
+  <!-- mobile friendly meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <style>
+    #center-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+    <div id="center-div">
+      <button id="button" onclick="payWithBlockCharge();">Pay With BlockCharge</button>
+      <p id="message-display"></p>
+    </div>
+<script>
+  function payWithBlockCharge() {
+    var instructions = "Please send your $BTC to: 18Hjx6qaH7nA811KeWj3ZPjkAQeQe2QSm8";
+    document.getElementById("message-display").innerHTML = instructions;
+  }
+</script>
+</body>
+</html>
